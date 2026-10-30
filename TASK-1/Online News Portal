@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online News Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #172b4d;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background: #e63946;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .breaking {
+            background: #fff0f0;
+            padding: 15px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .featured {
+            padding: 30px;
+            background: white;
+        }
+
+        .featured img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .featured h2 {
+            margin: 15px 0;
+            color: #172b4d;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        section h2 {
+            color: #172b4d;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e63946;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 30%;
+            min-width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .content h3 {
+            color: #172b4d;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            line-height: 1.5;
+        }
+
+        .author {
+            color: #e63946;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .business {
+            background: #e8edf5;
+        }
+
+        .technology {
+            background: white;
+        }
+
+        footer {
+            background: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .featured img {
+                height: 200px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DAILY NEWS</h1>
+        <p>Your World, Your News</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#national">National</a>
+        <a href="#international">International</a>
+        <a href="#sports">Sports</a>
+        <a href="#technology">Technology</a>
+        <a href="#business">Business</a>
+    </nav>
+
+    <div class="breaking">
+        BREAKING NEWS: Get the latest news and updates from around the world!
+    </div>
+
+    <div class="featured" id="home">
+        <h2>Featured Story</h2>
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1000" alt="News">
+        <h2>Latest Headlines From Around The World</h2>
+        <p>Stay updated with the latest national and international news.</p>
+        <p class="author">By News Desk | October 30, 2026</p>
+    </div>
+
+    <section id="national">
+        <h2>National News</h2>
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=500" alt="India">
+                <div class="content">
+                    <h3>India Development News</h3>
+                    <p>Latest updates about development and important events in India.</p>
+                    <p class="author">By Rahul Kumar</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?w=500" alt="City">
+                <div class="content">
+                    <h3>Education Updates</h3>
+                    <p>New developments and updates in the education sector.</p>
+                    <p class="author">By Priya Sharma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="international">
+        <h2>International News</h2>
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500" alt="World">
+                <div class="content">
+                    <h3>World News Updates</h3>
+                    <p>Important international events and global developments.</p>
+                    <p class="author">By John David</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=500" alt="Government">
+                <div class="content">
+                    <h3>Global Politics</h3>
+                    <p>Latest updates on international relations.</p>
+                    <p class="author">By Anil Kumar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sports">
+        <h2>Sports News</h2>
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=500" alt="Cricket">
+                <div class="content">
+                    <h3>Cricket Updates</h3>
+                    <p>Latest cricket matches, scores and tournament news.</p>
+                    <p class="author">By Sports Desk</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500" alt="Football">
+                <div class="content">
+                    <h3>Football News</h3>
+                    <p>Get updates about football matches and players.</p>
+                    <p class="author">By Arjun Reddy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology" id="technology">
+        <h2>Technology News</h2>
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Technology">
+                <div class="content">
+                    <h3>Latest Technology</h3>
+                    <p>Explore new inventions and modern technologies.</p>
+                    <p class="author">By Tech Desk</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500" alt="AI">
+                <div class="content">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Discover the latest developments in AI technology.</p>
+                    <p class="author">By Suresh Kumar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business" id="business">
+        <h2>Business News</h2>
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Business">
+                <div class="content">
+                    <h3>Business Updates</h3>
+                    <p>Latest business trends and company developments.</p>
+                    <p class="author">By Business Desk</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500" alt="Finance">
+                <div class="content">
+                    <h3>Market News</h3>
+                    <p>Updates about financial markets and the economy.</p>
+                    <p class="author">By Finance Desk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>DAILY NEWS</h2>
+        <p>Stay Informed | Stay Updated</p>
+        <p>© 2026 Daily News Portal</p>
+    </footer>
+
+</body>
+</html>

@@ -15,4 +15,5 @@ Branch: cse
 2) Yoga and Meditation Website
  Create a wellness website featuring yoga poses, meditation techniques, instructor profiles, class schedules, membership plans, and wellness articles. Use calming colors, readable typography, and responsive image sections.
 
-3) 
+3)  Online News Portal
+    Design a news website displaying national, international, sports, technology, and business news. Include headline sections, article cards, author details, featured stories, and a responsive multicolumn layout.  
